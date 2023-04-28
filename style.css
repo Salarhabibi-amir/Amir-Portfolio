@@ -60,6 +60,7 @@ body {
         line-height: 52px;
         padding: 0 24px;
         width: 78%;
+        color: #172B4D;
     }
     p {
         font-size: 16px;
@@ -75,7 +76,9 @@ body {
     }
     .linkflex a {
         text-decoration: none;
-        color: #7f8cff;
+        color: #7F8CFF;
+        font-size: 16px;
+        font-weight: bold;
     }
     .social-media {
         display: flex;
