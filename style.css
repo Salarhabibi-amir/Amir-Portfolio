@@ -4,9 +4,32 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    font-family: Poppins;
+}
 
 @media(min-width:370px) {
+    /* Header Section */
+    .humbergre-lines:hover {
+        cursor: pointer;
+    }
+    .line {
+        width: 20px;
+        height: 3px;
+        background-color: #7f8cff;
+        margin: 3px;
+    }
+    .logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: #6070FF;
+    }
+    .header-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px;
+    }
     /* Headline section style*/
     .container {
         width: 100%;
