@@ -1,115 +1,104 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #e5e5e5;
+    font-family: "Poppins", sans-serif;
+    background-color: #e5e5e5;
+}
+
+.fa {
+    color: #344563;
 }
 
 @media (min-width: 370px) {
-  /* container */
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 50px;
-    background-color: #fff;
-  }
-
-  /* Header Section */
-  .humbergre-lines:hover {
-    cursor: pointer;
-  }
-
-  .line {
-    width: 20px;
-    height: 3px;
-    background-color: #7f8cff;
-    margin: 3px;
-  }
-
-  .logo {
-    font-size: 18px;
-    font-weight: bold;
-    color: #6070ff;
-  }
-
-  .header-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 24px;
-  }
-
-  /* Headline section style */
-  .headline-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-  }
-
-  .background-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .myName {
-    font-size: 40px;
-    line-height: 52px;
-    padding: 0 24px;
-    width: 78%;
-  }
-
-  p {
-    font-size: 16px;
-    padding: 0 24px;
-    color: #344563;
-  }
-
-  .linkflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  .linkflex a {
-    text-decoration: none;
-    color: #7f8cff;
-  }
-
-  .social-media {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .social-media ul {
-    list-style-type: none;
-    margin-left: 24px;
-  }
-
-  .social-media li {
-    font-size: 25px;
-    padding: 10px;
-    padding-left: 0;
-  }
-
-  .social-media-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .background-social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+    /* container */
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        background-color: #fff;
+    }
+    /* Header Section */
+    .humbergre-lines:hover {
+        cursor: pointer;
+    }
+    .line {
+        width: 20px;
+        height: 3px;
+        background-color: #7f8cff;
+        margin: 3px;
+    }
+    .logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: #6070ff;
+    }
+    .header-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px;
+    }
+    /* Headline section style */
+    .headline-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .background-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .myName {
+        font-size: 40px;
+        line-height: 52px;
+        padding: 0 24px;
+        width: 78%;
+    }
+    p {
+        font-size: 16px;
+        padding: 0 24px;
+        color: #344563;
+    }
+    .linkflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .linkflex a {
+        text-decoration: none;
+        color: #7f8cff;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .social-media ul {
+        list-style-type: none;
+        margin-left: 24px;
+    }
+    .social-media li {
+        font-size: 25px;
+        padding: 10px;
+        padding-left: 0;
+    }
+    .social-media-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .background-social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
