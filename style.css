@@ -406,17 +406,13 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     padding-top: 20px;
 }
 
 .form-flex-item {
     width: 90%;
     margin: 10px;
-}
-
-.center {
-    align-self: center;
 }
 
 .form-flex-item input {
