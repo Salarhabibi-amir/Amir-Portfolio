@@ -453,3 +453,7 @@ p {
     /* align-self: center; */
     margin: 20px auto;
 }
+
+.div {
+    background-color: #FFFFFF;
+}
