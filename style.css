@@ -49,7 +49,6 @@ body {
 
 .headline-container {
   width: 100%;
-  min-width: 60vh;
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
@@ -367,4 +366,97 @@ p {
   padding-left: 30px;
   font-size: 15px;
   color: #253858;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6070ff;
+  border-top-left-radius: 10rem;
+}
+
+.contact-items {
+  align-self: center;
+  width: 100%;
+}
+
+.contact h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 52px;
+  text-align: center;
+}
+
+.contact p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.form-flex-item {
+  width: 90%;
+  margin: 10px;
+}
+
+.form-flex-item input {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 24px;
+  color: #172b4d;
+  font-size: 17px;
+}
+
+.textarea {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form-flex-item textarea {
+  width: 90%;
+  margin: 20px 10px;
+  background-color: white;
+  border: 0;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.form-flex-item textarea:placeholder {
+  color: #b3bac5;
+}
+
+.getintouch input {
+  width: 13rem;
+  color: #6070ff;
+  font-size: 17px;
+}
+
+.getintouch input:hover {
+  background-color: #396df2;
+  color: white;
+  cursor: help;
+}
+
+.bar {
+  width: 10rem;
+  height: 5px;
+  background-color: #0d151e;
+  margin: 20px auto;
+}
+
+.div {
+  background-color: white;
 }
