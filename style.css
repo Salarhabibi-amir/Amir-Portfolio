@@ -15,7 +15,6 @@ body {
 
 .container-flued {
     width: 95%;
-    min-height: 90vh;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -49,29 +48,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #6070ff;
-}
-
-
-/*header media query  */
-
-@media(min-width:768px) {
-    .header-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .line {
-        display: none;
-    }
-    .humbergre-lines ul {
-        display: flex;
-        list-style-type: none;
-    }
-    .humbergre-lines ul li {
-        padding: 10px 15px;
-        color: #344563;
-        font-size: 15px;
-    }
 }
 
 .headline-container {
@@ -137,6 +113,32 @@ p {
     justify-content: flex-start;
 }
 
+
+/*header media query  */
+
+@media(min-width:768px) {
+    .header-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .line {
+        display: none;
+    }
+    .humbergre-lines ul {
+        display: flex;
+        list-style-type: none;
+    }
+    .humbergre-lines ul li {
+        padding: 10px 15px;
+        color: #344563;
+        font-size: 15px;
+    }
+}
+
+
+/* Works Section */
+
 .works-container {
     width: 100%;
     display: grid;
@@ -148,15 +150,14 @@ p {
 }
 
 .works-grid-item {
-    margin: 0 24px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     border-radius: 20px;
+    margin-left: 3%;
 }
 
 .flex-item-width {
@@ -167,6 +168,28 @@ p {
     width: 100%;
     min-height: 220px;
     padding: 10px;
+}
+
+.desktop {
+    margin: 0 24px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media(min-width:768px) {
+    .works-grid-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .item-desktop-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .desktop {
+        width: 50%;
+    }
 }
 
 .Tonic {
