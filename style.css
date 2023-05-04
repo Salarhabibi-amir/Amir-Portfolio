@@ -55,10 +55,13 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
+  border-bottom-left-radius: 50px;
+}
+
+.headline-background {
   background-image: url('img/Header bg@2x.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom-left-radius: 50px;
 }
 
 .myName {
@@ -117,7 +120,7 @@ p {
   .header-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .line {
@@ -133,6 +136,14 @@ p {
     padding: 10px 15px;
     color: #344563;
     font-size: 15px;
+  }
+
+  .headline {
+    padding: 8rem;
+  }
+
+  .headline-background {
+    margin: 2rem;
   }
 }
 
@@ -428,7 +439,7 @@ p {
   }
 
   .heading2 {
-    padding-top: 1rem;
+    padding-top: 0;
   }
 
   .languages h2 {
