@@ -116,41 +116,6 @@ p {
   justify-content: flex-start;
 }
 
-@media (min-width: 768px) {
-  .header-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .humbergre-lines ul {
-    display: flex;
-    list-style-type: none;
-  }
-
-  .humbergre-lines ul li {
-    padding: 10px 15px;
-    font-size: 15px;
-    color: #344563;
-  }
-
-  .humbergre-lines ul a {
-    text-decoration: none;
-  }
-
-  .headline {
-    padding: 8rem;
-  }
-
-  .headline-background {
-    margin: 2rem;
-  }
-}
-
 .works-container {
   width: 100%;
   display: grid;
@@ -186,24 +151,6 @@ p {
   margin: 0 24px;
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .works-grid-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .item-desktop-2 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .desktop {
-    width: 50%;
-  }
 }
 
 .Tonic {
@@ -432,49 +379,6 @@ p {
   color: #253858;
 }
 
-@media (min-width: 768px) {
-  .myself-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 1rem;
-  }
-
-  .heading2 {
-    padding-top: 0;
-  }
-
-  .languages h2 {
-    /* border: 2px solid red; */
-    margin: 10px 0;
-  }
-
-  .lang-ul-list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .lang-flex-item {
-    width: 96%;
-    display: flex;
-    flex-direction: column;
-    background-color: #f7f7f9;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 15px;
-    border-radius: 10px;
-    padding-left: 40px;
-    margin: 10px 10px 5px 20px;
-  }
-}
-
 .contact {
   width: 100%;
   display: flex;
@@ -549,6 +453,8 @@ p {
   width: 13rem;
   color: #6070ff;
   font-size: 17px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .getintouch input:hover {
@@ -569,6 +475,99 @@ p {
 }
 
 @media (min-width: 768px) {
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .humbergre-lines ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .humbergre-lines ul li {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #344563;
+  }
+
+  .humbergre-lines ul a {
+    text-decoration: none;
+  }
+
+  .headline {
+    padding: 8rem;
+  }
+
+  .headline-background {
+    margin: 2rem;
+  }
+
+  .works-grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .template-img img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .item-desktop-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .desktop {
+    width: 50%;
+  }
+
+  .myself-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+  }
+
+  .heading2 {
+    padding-top: 0;
+  }
+
+  .languages h2 {
+    margin: 10px 0;
+  }
+
+  .lang-ul-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lang-flex-item {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f9;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    padding-left: 40px;
+    margin: 10px 10px 5px 20px;
+  }
+
   .contact {
     width: 100%;
     display: flex;
