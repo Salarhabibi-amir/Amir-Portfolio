@@ -500,6 +500,38 @@ p {
     text-decoration: none;
   }
 
+  .logo {
+    transition: font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes logo {
+    0% {
+      left: 0;
+      top: 0;
+    }
+
+    25% {
+      left: 200px;
+      top: 0;
+    }
+
+    100% {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .logo:hover {
+    font-size: 30px;
+    color: rgb(20, 76, 207);
+  }
+
   .headline {
     padding: 8rem;
   }
@@ -517,6 +549,13 @@ p {
   .template-img img {
     margin: 0;
     padding: 0;
+    transition: opacity;
+    transition-duration: 5s;
+  }
+
+  .template-img img:hover {
+    opacity: 0.2;
+    cursor: grab;
   }
 
   .item-desktop-2 {
