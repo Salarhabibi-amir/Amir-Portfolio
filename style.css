@@ -499,7 +499,36 @@ p {
   .humbergre-lines ul a {
     text-decoration: none;
   }
-
+  
+  .logo {
+        transition: font-size;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        position: relative;
+        animation-name: logo;
+        animation-duration: 20s;
+    }
+    
+  @keyframes logo {
+      0% {
+          left: 0px;
+          top: 0px;
+      }
+      25% {
+          left: 200px;
+          top: 0px;
+      }
+      100% {
+          left: 0px;
+          top: 0px;
+      }
+  }
+   
+  .logo:hover {
+      font-size: 30px;
+      color: rgb(20, 76, 207);
+  }
+  
   .headline {
     padding: 8rem;
   }
