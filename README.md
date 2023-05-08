@@ -85,6 +85,7 @@ To run the project, execute the following command:
 - GitHub: [@AmirHussainhabibi](https://github.com/Salarhabibi-amir)
 
 - LinkedIn: [Amir Hussain Habibi](https://www.linkedin.com/in/amir-hussain-habibi-153688185/)
+- Portfolio:[Amir Portfolio](https://salarhabibi-amir.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,9 +93,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Will add the works section]**
-- [ ] **[Will add the About me Section]**
-- [ ] **[Will add the Contact Section]**
+- [ ] **[Used mobile first approach]**
+- [ ] **[Used CSS animation]**
+- [ ] **[Used CSS transition]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
