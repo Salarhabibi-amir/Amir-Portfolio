@@ -85,7 +85,7 @@ To run the project, execute the following command:
 - GitHub: [@AmirHussainhabibi](https://github.com/Salarhabibi-amir)
 
 - LinkedIn: [Amir Hussain Habibi](https://www.linkedin.com/in/amir-hussain-habibi-153688185/)
-- Portfolio:[Amir Portfolio](https://salarhabibi-amir.github.io/)
+- Portfolio:[ salarhabibi-amir ](https://salarhabibi-amir.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
