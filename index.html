@@ -18,28 +18,34 @@
     <div class="container-flued">
 
         <!-- header section -->
+        <header>
+            <div class="mobile-menu header-section-mobile">
+                <a class="logo">My Logo</a>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="https://salarhabibi-amir.github.io/" class="close-overlap1">Portfolio</a>
+                        <a href="#about" class="close-overlap2">About</a>
+                        <a href="#contact" class="close-overlap3">Contact</a>
 
-        <header class="header-section">
+                    </div>
+                    <div class="bar"></div>
 
-            <a class="logo ">My Logo</a>
-            <nav class="humbergre-lines ">
-                <div class="line "></div>
-                <div class="line "></div>
-                <div class="line "></div>
-                <ul>
-                    <a href="#">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="#about">
-                        <li>About</li>
-                    </a>
-                    <a href="#contact">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </nav>
-
+                </div>
+                <div><span class="fa fa-bars" onclick="openNav()"> </span></div>
+            </div>
+            <div class="desktop-menu">
+                <a class="logo">My Logo</a>
+                <div class="Desk-menu-item">
+                    <a href="https://salarhabibi-amir.github.io/">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </header>
+
+
+
         <!-- Headline section -->
         <div class="headline-background">
             <section class="headline">
@@ -347,6 +353,7 @@
             </div>
         </section>
     </div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
