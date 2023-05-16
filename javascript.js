@@ -1,8 +1,8 @@
-let portfoliobtn = document.querySelector('.close-overlap1');
-let aboutbtn = document.querySelector('.close-overlap2');
-let contactbtn = document.querySelector('.close-overlap3');
-let barbtn = document.querySelector('.fa-bars');
-let closebtn = document.querySelector('.closebtn')
+const portfoliobtn = document.querySelector('.close-overlap1');
+const aboutbtn = document.querySelector('.close-overlap2');
+const contactbtn = document.querySelector('.close-overlap3');
+const barbtn = document.querySelector('.fa-bars');
+const closebtn = document.querySelector('.closebtn')
 closebtn.addEventListener('click', function() {
     document.getElementById("myNav").style.height = "0%";
 
