@@ -1,4 +1,3 @@
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -10,14 +9,11 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  
-  
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
-
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -29,15 +25,12 @@ I am starting this project to Creat my own Portfolio.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://microverse.com/">HTML & CSS</a></li>
+    <li><a href="https://microverse.com/">HTML , CSS & JavaScript</a></li>
   </ul>
 </details>
-
 
 <!-- Features -->
 
@@ -59,7 +52,6 @@ I am starting this project to Creat my own Portfolio.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -70,11 +62,10 @@ In order to run this project you need:
 ### Usage
 
 To run the project, execute the following command:
+
 - Clone the repository or download the zip file.
 - extract the zip file and open the index file in a browser.
 - open the cloned file with Vscode
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,13 +73,18 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Author1**
 
 - GitHub: [@AmirHussainhabibi](https://github.com/Salarhabibi-amir)
 
 - LinkedIn: [Amir Hussain Habibi](https://www.linkedin.com/in/amir-hussain-habibi-153688185/)
 - Portfolio:[ salarhabibi-amir ](https://salarhabibi-amir.github.io/)
+
+👤 **Author2**
+
+- GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
+
+- Portfolio:[ Demes A. Ameneshoa ](https://demesameneshoa.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,12 +98,9 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
 
 Pleas review my project and make me happy with your nice feedbacks.
 
@@ -123,6 +116,5 @@ I would like to thank from Microvers Because of preparing a great envirnment for
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
