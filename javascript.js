@@ -16,7 +16,6 @@ portfoliobtn.addEventListener('click', function() {
 aboutbtn.addEventListener('click', function() {
     document.getElementById("myNav").style.height = "0%";
 })
-
 contactbtn.addEventListener('click', function() {
     document.getElementById("myNav").style.height = "0%";
 })
