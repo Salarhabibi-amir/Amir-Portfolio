@@ -175,6 +175,14 @@ p {
   list-style-type: none;
 }
 
+.Canopy-list li {
+  padding: 6px;
+  margin-left: 20px;
+  text-align: left;
+  color: #7a869a;
+  font-weight: 600;
+}
+
 .ol-list ul li {
   padding: 6px;
   margin-left: 20px;
@@ -559,14 +567,6 @@ p {
   display: flex;
   flex-direction: row;
   font-size: 13px;
-}
-
-.Canopy-list li {
-  padding: 6px;
-  margin-left: 20px;
-  text-align: left;
-  color: #7a869a;
-  font-weight: 600;
 }
 
 .modal-content-flexItem img {
