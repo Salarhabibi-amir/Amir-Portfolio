@@ -501,6 +501,11 @@ p {
   transition: 0.3s;
 }
 
+.btns-live-cods a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .Resumebtn a:hover {
   color: white;
 }
@@ -609,7 +614,6 @@ p {
   padding: 5px;
   border-radius: 10px;
   border: 1px solid #6070ff;
-  color: #6070ff;
   background-color: white;
   font-size: 15px;
 }
