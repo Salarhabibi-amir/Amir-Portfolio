@@ -175,6 +175,14 @@ p {
   list-style-type: none;
 }
 
+.Canopy-list li {
+  padding: 6px;
+  margin-left: 20px;
+  text-align: left;
+  color: #7a869a;
+  font-weight: 600;
+}
+
 .ol-list ul li {
   padding: 6px;
   margin-left: 20px;
@@ -226,7 +234,7 @@ p {
   cursor: pointer;
 }
 
-#seeProject-button {
+.seeProject-button {
   padding: 1rem;
   border: 1px solid #396df2;
   color: #396df2;
@@ -235,7 +243,7 @@ p {
   border-radius: 10px;
 }
 
-#seeProject-button:hover {
+.seeProject-button:hover {
   border: 1px solid gray;
   background-color: #6070ff;
   color: white;
@@ -464,6 +472,169 @@ p {
   background-color: white;
 }
 
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(96, 112, 255, 0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: left;
+  padding-left: 28px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.Resumebtn a:hover {
+  color: white;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 32px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Tonic-popup {
+  font-size: 32px;
+  display: inline;
+  color: #172b4d;
+}
+
+.Canopy-list {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+
+.modal-content-flexItem img {
+  width: 100%;
+  min-height: 220px;
+}
+
+.modal-content-flexItem p {
+  color: #344563;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ul-list-popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desk-popUp-nestFlex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.btns-live-cods-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 50px;
+  gap: 10px;
+}
+
+.btns-live-cods {
+  border-radius: 10px;
+  border: 1px solid #6070ff;
+  background-color: white;
+  text-decoration: none;
+  color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns-live-cods img {
+  width: 10%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -608,65 +779,23 @@ p {
   .bar {
     display: none;
   }
-}
 
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(96, 112, 255, 0.95);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 15%;
-  width: 100%;
-  text-align: left;
-  padding-left: 28px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 32px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-}
-
-.Resumebtn a:hover {
-  color: white;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
+  .desk-popUp-nestFlex {
+    display: flex;
+    flex-direction: row;
   }
 
-  .overlay a {
-    font-size: 32px;
+  .desk-popUp-item1 {
+    width: 65%;
   }
 
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  .desk-popUp-item2 {
+    width: 35%;
+    margin-top: 10px;
+  }
+
+  .desk-popUp-item2 br,
+  hr {
+    display: none;
   }
 }

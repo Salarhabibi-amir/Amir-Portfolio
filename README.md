@@ -82,9 +82,7 @@ To run the project, execute the following command:
 
 👤 **Author2**
 
-- GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
-
-- Portfolio:[ Demes A. Ameneshoa ](https://demesameneshoa.github.io/Portfolio/)
+- GitHub: [Roathy](https://github.com/Roathy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
