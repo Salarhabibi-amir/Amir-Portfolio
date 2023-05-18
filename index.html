@@ -172,18 +172,19 @@
 
             </div>
             <div class="contact-items">
-                <form action="https://formspree.io/f/xeqwnkae" method="post" class="form-flex">
+                <form action="https://formspree.io/f/xeqwnkae" method="post" class="form-flex" id="contactForm">
                     <div class="form-flex-item ">
                         <input type="text" placeholder="Lorem Ipsum" maxlength="30" name="userName">
                     </div>
                     <div class="form-flex-item ">
-                        <input type="emial" placeholder="loremipsum@gmail.com" name="emial">
+                        <input type="emial" placeholder="loremipsum@gmail.com" name="email" id="email">
                     </div>
                     <div class="form-flex-item textarea">
                         <textarea name="" id="" cols="30" rows="12" maxlength="500" required name="text" placeholder="Write your message here..."></textarea>
                     </div>
                     <div class=" getintouch ">
-                        <input type="submit" value="Get in touch" name="submit">
+                        <input type="submit" value="Get in touch">
+                        <span class="error"></span>
                     </div>
                 </form>
             </div>

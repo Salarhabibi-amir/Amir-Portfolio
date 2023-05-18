@@ -635,6 +635,11 @@ p {
   cursor: pointer;
 }
 
+.error {
+  color: rgb(250, 6, 6);
+  font-size: 15px;
+}
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;
