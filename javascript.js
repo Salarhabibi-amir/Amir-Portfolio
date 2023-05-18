@@ -240,3 +240,17 @@ seeProject.forEach((button) => button.addEventListener('click', (button) => {
     }
   };
 }));
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const errorMessage = document.querySelector('.error');
+
+  if (email.toLowerCase() === email) {
+    errorMessage.innerText = '';
+    contactForm.submit();
+  } else {
+    errorMessage.innerText = 'Error: Email address must be in lowercase.';
+  }
+});
