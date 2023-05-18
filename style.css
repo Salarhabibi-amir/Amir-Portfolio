@@ -635,6 +635,14 @@ p {
   cursor: pointer;
 }
 
+.error-message-container {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .error {
   color: rgb(250, 6, 6);
   font-size: 15px;
