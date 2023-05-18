@@ -240,21 +240,6 @@ seeProject.forEach((button) => button.addEventListener('click', (button) => {
     }
   };
 }));
-// // Email validation
-// const form = document.getElementsByClassName('form-flix');
-// form.addEventListener('submit', function(event) {
-//     const email = document.getElementById('email').value;
-//     const error = document.querySelector('.error');
-//     const errorMessage = "E-mail should be lovercase";
-
-//     if (email.toLowerCase === email) {
-//         form.submit();
-//         error.textContent = errorMessage
-//     } else {
-//         even.preventDefault();
-//         error.textContent = errorMessage;
-//     }
-// })
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
