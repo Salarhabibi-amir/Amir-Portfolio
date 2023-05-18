@@ -1,0 +1,14 @@
+<div class="footer-buttons">
+    <a href="${projectData[index].livelink}" target="_blank" class="btn">
+        <span>See live</span>
+        <img src="./img/blue-export-icon.svg" alt="Blue Export icon" />
+    </a>
+    <a href="${projectData[index].source}" target="_blank" class="btn">
+        <span>See source</span>
+        <img src="./img/blue-github-icon.svg" alt="Blue Github icon" />
+    </a>
+</div>
+.footer-buttons { width: 100%; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; gap: 16px; } .footer-buttons a { display: flex; justify-content: space-around; align-items: center; gap: 10px; }
+
+<button class="btns-live-cods"><a href="${pop.live}">See live &nbsp;<i class="fa fa-power-off"></i></a></button>
+<button class="btns-live-cods"><a href="${pop.live}">See codes &nbsp;<i class="fa fa-github"></i></a></button>

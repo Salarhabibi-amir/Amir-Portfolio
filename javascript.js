@@ -24,7 +24,8 @@ const projects = [{
   title1: 'Tonic',
   company: 'CANOPY',
   company1: 'CANOPY',
-  icon: './img/Counter.png',
+  icon: './img/Icon-GitHub.svg',
+  icon1: './img/Icon - Export.svg',
   specialization: 'Back End Dev',
   specialization1: 'Back End Dev',
   year: '2015',
@@ -49,7 +50,9 @@ const projects = [{
   title1: 'Multi-Post',
   company: 'CANOPY',
   company1: 'FACEBOOK',
-  icon: './img/Snapshoot Portfolio.png',
+  icon: './img/Icon-GitHub.svg',
+  icon1: './img/Icon - Export.svg',
+
   specialization: 'B2ack End Dev',
   specialization1: 'Full Stack Dev',
   year: '2015',
@@ -74,7 +77,9 @@ const projects = [{
   title1: 'Facebook 360',
   company: 'CANOPY',
   company1: 'FACEBOOK 360',
-  icon: './img/Snapshoot Portfolio5.png',
+  icon: './img/Icon-GitHub.svg',
+  icon1: './img/Icon - Export.svg',
+
   specialization: 'B2ack End Dev',
   specialization1: 'Full Stack Dev',
   year: '2015',
@@ -99,7 +104,8 @@ const projects = [{
   title1: 'Uber Navigation',
   company: 'CANOPY',
   company1: 'Uber',
-  icon: './img/Snapshoot Portfolio 2.png',
+  icon: './img/Icon-GitHub.svg',
+  icon1: './img/Icon - Export.svg',
   specialization: 'Back End Dev',
   specialization1: 'Lead Developer',
   year: '2015',
@@ -201,8 +207,9 @@ seeProject.forEach((button) => button.addEventListener('click', (button) => {
                       <hr>
                   </div>
                   <div class="modal-content-flexItem btns-live-cods-flex">
-                  <button class="btns-live-cods"><a href="${pop.live}">See live &nbsp;&nbsp; <i class="fa fa-power-off "></i></a></button>
-                  <button class="btns-live-cods"><a href="${pop.live}">See codes &nbsp;&nbsp;<i class="fa fa-github"></i></a></button>
+                  
+                  <a href="${pop.live}"  class="btns-live-cods"><span>See live</span><img src="${pop.icon1}"></a>
+                  <a href="${pop.live}"  class="btns-live-cods"><span>See source</span><img src="${pop.icon}"></i></a>
                   </div>
               </div>
           </div>

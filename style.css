@@ -501,9 +501,9 @@ p {
   transition: 0.3s;
 }
 
-.btns-live-cods a {
-  text-decoration: none;
-  color: #6070ff;
+.btns-live-cods img {
+  width: 50px;
+  height: 80px;
 }
 
 .Resumebtn a:hover {
@@ -550,7 +550,7 @@ p {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fff;
   padding: 20px;
   border-radius: 15px;
   margin: 20px 50px;
@@ -604,18 +604,28 @@ p {
 .btns-live-cods-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 20px;
+  height: 50px;
+  gap: 10px;
 }
 
 .btns-live-cods {
-  width: 46%;
-  height: 45px;
-  padding: 5px;
   border-radius: 10px;
   border: 1px solid #6070ff;
   background-color: white;
-  font-size: 15px;
+  text-decoration: none;
+  color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns-live-cods img {
+  width: 10%;
+
+  /* height: 10%; */
 }
 
 .close {
