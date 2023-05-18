@@ -501,11 +501,6 @@ p {
   transition: 0.3s;
 }
 
-.btns-live-cods img {
-  width: 50px;
-  height: 80px;
-}
-
 .Resumebtn a:hover {
   color: white;
 }
@@ -624,8 +619,6 @@ p {
 
 .btns-live-cods img {
   width: 10%;
-
-  /* height: 10%; */
 }
 
 .close {
