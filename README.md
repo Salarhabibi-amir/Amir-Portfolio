@@ -84,6 +84,10 @@ To run the project, execute the following command:
 
 - GitHub: [Roathy](https://github.com/Roathy)
 
+👤 **lRebornsl**
+
+- GitHub: [lRebornsl](https://github.com/lRebornsl)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

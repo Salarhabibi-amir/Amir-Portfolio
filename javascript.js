@@ -243,7 +243,6 @@ seeProject.forEach((button) => button.addEventListener('click', (button) => {
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const email = document.getElementById('email').value;
   const errorMessage = document.querySelector('.error');
 
@@ -254,3 +253,44 @@ contactForm.addEventListener('submit', (event) => {
     errorMessage.innerText = 'Error: Email address must be in lowercase.';
   }
 });
+
+const userName = document.querySelector('.user');
+const email = document.getElementById('email');
+const textArea = document.querySelector('.textArea');
+
+email.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+userName.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+textArea.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+// pre-fill the form
+const browserData = JSON.parse(localStorage.getItem('formData'));
+if (browserData) {
+  userName.value = browserData.name;
+  email.value = browserData.email;
+  textArea.value = browserData.message;
+}
+
+// JavaScript object
+const formData = {
+  name: userName.value,
+  email: email.value,
+  message: textArea.value,
+};
+localStorage.setItem('contactFormData', JSON.stringify(formData));
