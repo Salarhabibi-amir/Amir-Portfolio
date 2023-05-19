@@ -244,31 +244,53 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = document.getElementById('email').value;
-  const formdata = {
-    email: document.getElementById('email').value,
-    userName: document.querySelector('.user').value,
-    textArea: document.querySelector('.textArea').value,
-  };
   const errorMessage = document.querySelector('.error');
 
   if (email.toLowerCase() === email) {
     errorMessage.innerText = '';
     contactForm.submit();
-    localStorage.setItem('formdata', JSON.stringify(formdata));
   } else {
     errorMessage.innerText = 'Error: Email address must be in lowercase.';
   }
 });
-const email = document.getElementById('email');
+
 const userName = document.querySelector('.user');
+const email = document.getElementById('email');
 const textArea = document.querySelector('.textArea');
 
-const browserData = JSON.parse(localStorage.getItem('formdata'));
+email.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+userName.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+textArea.addEventListener('change', () => {
+  localStorage.setItem('formData', JSON.stringify({
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
+  }));
+});
+// pre-fill the form
+const browserData = JSON.parse(localStorage.getItem('formData'));
+if (browserData) {
+  userName.value = browserData.name;
+  email.value = browserData.email;
+  textArea.value = browserData.message;
+}
 
-const browserUser = browserData.userName;
-const broswerEmail = browserData.email;
-const broswerText = browserData.textArea;
-
-userName.value = browserUser;
-email.value = broswerEmail;
-textArea.value = broswerText;
+// JavaScript object
+const formData = {
+  name: userName.value,
+  email: email.value,
+  message: textArea.value,
+};
+localStorage.setItem('contactFormData', JSON.stringify(formData));
