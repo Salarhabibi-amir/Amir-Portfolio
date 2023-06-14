@@ -4,131 +4,131 @@ const contactbtn = document.querySelector('.close-overlap3');
 const barbtn = document.querySelector('.fa-bars');
 const closebtn = document.querySelector('.closebtn');
 closebtn.addEventListener('click', () => {
-  document.getElementById('myNav').style.height = '0%';
+    document.getElementById('myNav').style.height = '0%';
 });
 barbtn.addEventListener('click', () => {
-  document.getElementById('myNav').style.height = '100%';
+    document.getElementById('myNav').style.height = '100%';
 });
 portfoliobtn.addEventListener('click', () => {
-  document.getElementById('myNav').style.height = '0%';
+    document.getElementById('myNav').style.height = '0%';
 });
 aboutbtn.addEventListener('click', () => {
-  document.getElementById('myNav').style.height = '0%';
+    document.getElementById('myNav').style.height = '0%';
 });
 contactbtn.addEventListener('click', () => {
-  document.getElementById('myNav').style.height = '0%';
+    document.getElementById('myNav').style.height = '0%';
 });
 const projects = [{
-  id: 'Project1',
-  title: 'Tonic',
-  title1: 'Tonic',
-  company: 'CANOPY',
-  company1: 'CANOPY',
-  icon: './img/Icon-GitHub.svg',
-  icon1: './img/Icon - Export.svg',
-  specialization: 'Back End Dev',
-  specialization1: 'Back End Dev',
-  year: '2015',
-  year1: '2015',
-  description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-  description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  technologies: {
-    tech1: 'html',
-    techE: 'Ruby on rials',
-    tech2: 'css',
-    tech3: 'javaScript',
-  },
-  details: 'See project',
-  imageMobile: './img/Portfolio.png',
-  imageDesktop: './img/Portfolio.png',
-  live: 'https://Salarhabibi-amir.github.io/',
-  source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
-},
-{
-  id: 'Project2',
-  title: 'Multi-Post',
-  title1: 'Multi-Post',
-  company: 'CANOPY',
-  company1: 'FACEBOOK',
-  icon: './img/Icon-GitHub.svg',
-  icon1: './img/Icon - Export.svg',
+        id: 'Project1',
+        title: 'Star Center Website',
+        title1: 'Star Center Website',
+        company: 'StarEduSociety',
+        company1: 'StarEduSociety',
+        icon: './img/Icon-GitHub.svg',
+        icon1: './img/Icon - Export.svg',
+        specialization: 'Front End Dev',
+        specialization1: 'Front End Dev',
+        year: '2023',
+        year1: '2023',
+        description: 'Stare Education Society is an education center based in Kabul, Afghanistan. the star Education Society project is a project that I have completed for my first capstone project at the end of Module 1 at Microvers school. In this project I used Html, Css and Bootstrap. It is responsive on different devices.',
+        description1: "Stare Education Society is an education center based in Kabul, Afghanistan. the star Education Society project is a project that I have completed for my first capstone project at the end of Module 1 at Microvers school. In this project I used Html, Css and Bootstrap. It is responsive on different devices.",
+        technologies: {
+            tech1: 'html',
+            techE: 'Ruby on rials',
+            tech2: 'css',
+            tech3: 'javaScript',
+        },
+        details: 'See project',
+        imageMobile: './img/CapstoneDesktop.jpeg',
+        imageDesktop: './img/CapstoneDesktop.jpeg',
+        live: 'https://salarhabibi-amir.github.io/Star-Education-Society/',
+        source: 'https://github.com/Salarhabibi-amir/Star-Education-Society',
+    },
+    {
+        id: 'Project2',
+        title: 'Multi-Post',
+        title1: 'Multi-Post',
+        company: 'CANOPY',
+        company1: 'FACEBOOK',
+        icon: './img/Icon-GitHub.svg',
+        icon1: './img/Icon - Export.svg',
 
-  specialization: 'B2ack End Dev',
-  specialization1: 'Full Stack Dev',
-  year: '2015',
-  year1: '2015',
-  description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-  description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  technologies: {
-    tech1: 'html',
-    techE: 'Ruby on rials',
-    tech2: 'css',
-    tech3: 'javaScript',
-  },
-  details: 'See project',
-  imageMobile: './img/Snapshoot Portfolio.png',
-  imageDesktop: './img/Snapshoot Portfolio.png',
-  live: 'https://Salarhabibi-amir.github.io/',
-  source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
-},
-{
-  id: 'Project3',
-  title: 'Tonic',
-  title1: 'Facebook 360',
-  company: 'CANOPY',
-  company1: 'FACEBOOK 360',
-  icon: './img/Icon-GitHub.svg',
-  icon1: './img/Icon - Export.svg',
+        specialization: 'B2ack End Dev',
+        specialization1: 'Full Stack Dev',
+        year: '2015',
+        year1: '2015',
+        description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+        description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        technologies: {
+            tech1: 'html',
+            techE: 'Ruby on rials',
+            tech2: 'css',
+            tech3: 'javaScript',
+        },
+        details: 'See project',
+        imageMobile: './img/Snapshoot Portfolio.png',
+        imageDesktop: './img/Snapshoot Portfolio.png',
+        live: 'https://Salarhabibi-amir.github.io/',
+        source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
+    },
+    {
+        id: 'Project3',
+        title: 'Tonic',
+        title1: 'Facebook 360',
+        company: 'CANOPY',
+        company1: 'FACEBOOK 360',
+        icon: './img/Icon-GitHub.svg',
+        icon1: './img/Icon - Export.svg',
 
-  specialization: 'B2ack End Dev',
-  specialization1: 'Full Stack Dev',
-  year: '2015',
-  year1: '2015',
-  description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-  description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  technologies: {
-    tech1: 'html',
-    techE: 'Ruby on rials',
-    tech2: 'css',
-    tech3: 'javaScript',
-  },
-  details: 'See project',
-  imageMobile: './img/Snapshoot Portfolio5.png',
-  imageDesktop: './img/Snapshoot Portfolio5.png',
-  live: 'https://Salarhabibi-amir.github.io',
-  source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
-},
-{
-  id: 'Project4',
-  title: 'Multi-Post<br>Stories',
-  title1: 'Uber Navigation',
-  company: 'CANOPY',
-  company1: 'Uber',
-  icon: './img/Icon-GitHub.svg',
-  icon1: './img/Icon - Export.svg',
-  specialization: 'Back End Dev',
-  specialization1: 'Lead Developer',
-  year: '2015',
-  year1: '2018',
-  description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
-  description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  technologies: {
-    tech1: 'html',
-    techE: 'Ruby on rials',
-    tech2: 'css',
-    tech3: 'javaScript',
-  },
-  details: 'See project',
-  imageMobile: './img/Snapshoot Portfolio 2.png',
-  imageDesktop: './img/Snapshoot Portfolio 2.png',
-  live: 'https://Salarhabibi-amir.github.io/',
-  source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
-},
+        specialization: 'B2ack End Dev',
+        specialization1: 'Full Stack Dev',
+        year: '2015',
+        year1: '2015',
+        description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+        description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        technologies: {
+            tech1: 'html',
+            techE: 'Ruby on rials',
+            tech2: 'css',
+            tech3: 'javaScript',
+        },
+        details: 'See project',
+        imageMobile: './img/Snapshoot Portfolio5.png',
+        imageDesktop: './img/Snapshoot Portfolio5.png',
+        live: 'https://Salarhabibi-amir.github.io',
+        source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
+    },
+    {
+        id: 'Project4',
+        title: 'Multi-Post<br>Stories',
+        title1: 'Uber Navigation',
+        company: 'CANOPY',
+        company1: 'Uber',
+        icon: './img/Icon-GitHub.svg',
+        icon1: './img/Icon - Export.svg',
+        specialization: 'Back End Dev',
+        specialization1: 'Lead Developer',
+        year: '2015',
+        year1: '2018',
+        description: 'A daily selection of privately <br class="must-ignor">personalized reads;no accounts or <br class="must-ignor">sign-ups required.',
+        description1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        technologies: {
+            tech1: 'html',
+            techE: 'Ruby on rials',
+            tech2: 'css',
+            tech3: 'javaScript',
+        },
+        details: 'See project',
+        imageMobile: './img/Snapshoot Portfolio 2.png',
+        imageDesktop: './img/Snapshoot Portfolio 2.png',
+        live: 'https://Salarhabibi-amir.github.io/',
+        source: 'https://github.com/Salarhabibi-amir/Salarhabibi-amir.github.io',
+    },
 ];
 const Worksection = document.querySelector('.works-container');
 projects.forEach((project) => {
-  const cardDiv = document.createElement('div');
-  cardDiv.innerHTML = `
+    const cardDiv = document.createElement('div');
+    cardDiv.innerHTML = `
   <div class="works-grid-item opacity">
   <div class="desktop">
       <div class="template-img flex-item-width">
@@ -163,18 +163,18 @@ projects.forEach((project) => {
   </div>
 </div>
   `;
-  Worksection.append(cardDiv);
+    Worksection.append(cardDiv);
 });
 const body = document.querySelector('body');
 const seeProject = document.querySelectorAll('.seeProject-button');
 const opac = document.querySelectorAll('.opacity');
 seeProject.forEach((button) => button.addEventListener('click', (button) => {
-  const { id } = button.target;
-  const pop = projects.find((button) => button.id === id);
-  const modal = document.createElement('div');
-  modal.className = 'modal';
-  const popup = document.createElement('div');
-  popup.innerHTML = `
+    const { id } = button.target;
+    const pop = projects.find((button) => button.id === id);
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    const popup = document.createElement('div');
+    popup.innerHTML = `
   <!-- The Modal -->
       <!-- Modal content -->
       <div class="modal-content">
@@ -209,49 +209,49 @@ seeProject.forEach((button) => button.addEventListener('click', (button) => {
                   <div class="modal-content-flexItem btns-live-cods-flex">
                   
                   <a href="${pop.live}"  class="btns-live-cods"><span>See live</span><img src="${pop.icon1}"></a>
-                  <a href="${pop.live}"  class="btns-live-cods"><span>See source</span><img src="${pop.icon}"></i></a>
+                  <a href="${pop.source}"  class="btns-live-cods"><span>See source</span><img src="${pop.icon}"></i></a>
                   </div>
               </div>
           </div>
       </div>
 
   `;
-  modal.appendChild(popup);
-  body.append(modal);
+    modal.appendChild(popup);
+    body.append(modal);
 
-  const span = document.getElementsByClassName('close')[0];
-  span.addEventListener('click', () => {
-    modal.remove(popup);
-    // body.remove(modal);
+    const span = document.getElementsByClassName('close')[0];
+    span.addEventListener('click', () => {
+        modal.remove(popup);
+        // body.remove(modal);
+        for (let i = 0; i < opac.length; i += 1) {
+            opac[i].style.opacity = '1';
+        }
+    });
+
     for (let i = 0; i < opac.length; i += 1) {
-      opac[i].style.opacity = '1';
+        opac[i].style.opacity = '0.4';
     }
-  });
-
-  for (let i = 0; i < opac.length; i += 1) {
-    opac[i].style.opacity = '0.4';
-  }
-  window.onclick = (event) => {
-    if (event.target === popup) {
-      modal.style.display = 'none';
-      for (let i = 0; i < opac.length; i += 1) {
-        opac[i].style.opacity = '1';
-      }
-    }
-  };
+    window.onclick = (event) => {
+        if (event.target === popup) {
+            modal.style.display = 'none';
+            for (let i = 0; i < opac.length; i += 1) {
+                opac[i].style.opacity = '1';
+            }
+        }
+    };
 }));
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const email = document.getElementById('email').value;
-  const errorMessage = document.querySelector('.error');
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const errorMessage = document.querySelector('.error');
 
-  if (email.toLowerCase() === email) {
-    errorMessage.innerText = '';
-    contactForm.submit();
-  } else {
-    errorMessage.innerText = 'Error: Email address must be in lowercase.';
-  }
+    if (email.toLowerCase() === email) {
+        errorMessage.innerText = '';
+        contactForm.submit();
+    } else {
+        errorMessage.innerText = 'Error: Email address must be in lowercase.';
+    }
 });
 
 const userName = document.querySelector('.user');
@@ -259,38 +259,38 @@ const email = document.getElementById('email');
 const textArea = document.querySelector('.textArea');
 
 email.addEventListener('change', () => {
-  localStorage.setItem('formData', JSON.stringify({
-    name: userName.value,
-    email: email.value,
-    message: textArea.value,
-  }));
+    localStorage.setItem('formData', JSON.stringify({
+        name: userName.value,
+        email: email.value,
+        message: textArea.value,
+    }));
 });
 userName.addEventListener('change', () => {
-  localStorage.setItem('formData', JSON.stringify({
-    name: userName.value,
-    email: email.value,
-    message: textArea.value,
-  }));
+    localStorage.setItem('formData', JSON.stringify({
+        name: userName.value,
+        email: email.value,
+        message: textArea.value,
+    }));
 });
 textArea.addEventListener('change', () => {
-  localStorage.setItem('formData', JSON.stringify({
-    name: userName.value,
-    email: email.value,
-    message: textArea.value,
-  }));
+    localStorage.setItem('formData', JSON.stringify({
+        name: userName.value,
+        email: email.value,
+        message: textArea.value,
+    }));
 });
 // pre-fill the form
 const browserData = JSON.parse(localStorage.getItem('formData'));
 if (browserData) {
-  userName.value = browserData.name;
-  email.value = browserData.email;
-  textArea.value = browserData.message;
+    userName.value = browserData.name;
+    email.value = browserData.email;
+    textArea.value = browserData.message;
 }
 
 // JavaScript object
 const formData = {
-  name: userName.value,
-  email: email.value,
-  message: textArea.value,
+    name: userName.value,
+    email: email.value,
+    message: textArea.value,
 };
 localStorage.setItem('contactFormData', JSON.stringify(formData));
