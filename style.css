@@ -14,7 +14,7 @@ body {
 }
 
 .container-flued {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -705,7 +705,7 @@ p {
   }
 
   .headline-background {
-    margin: 2rem;
+    /* margin: 2rem; */
   }
 
   .works-grid-item {
