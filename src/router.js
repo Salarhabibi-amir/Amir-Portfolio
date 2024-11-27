@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 import ProjectList from './components/ProjectList.vue'
 import ContactForm from './components/ContactForm.vue'
 import HeadLine from './components/HeadLine.vue'
@@ -23,7 +23,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
