@@ -1,6 +1,6 @@
 <template>
   <app-navbar></app-navbar>
-  <div class=" bg-red-500 w-screen-md">
+  <div class="border mt-auto mx-auto container mx-auto  px-6">
     <RouterView></RouterView>
   </div>
 </template>
