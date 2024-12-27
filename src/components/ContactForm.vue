@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-red-800 mx-w-lg">
+    <div class="mx-w-lg p-6 container mx-auto">
         <div class="">
             <h1>
-                contact
+                Coming soo..
             </h1>
         </div>
     </div>
