@@ -12,14 +12,16 @@
             </p>
             <p>
                 I have worked on various types of web applications, such  <a href="http://emllak.com" target="_blank"
-                    class="text-blue-600 hover:underline">Emllak</a>, <a href="http://karwwan.com"
-                    class="text-blue-600 hover:underline" target="_blank">Karwwan</a>, <a href="http://daraaye.com"
-                    class="text-blue-600 hover:underline">Darayee</a> , <a href="http://alhawaims.com" target="_blank"
-                    class="text-blue-600 hover:underline">HRIMS</a> platforms, <a href="http://alhawatechs.com"
-                    class="text-blue-600 hover:underline" target="_blank">Al-Hawa
-                    Technologies</a> website and <a href="http://alhawagc.com" class="text-blue-600 hover:underline"
-                    target="_blank">Al-Hawa Group of Companies</a> website.
+                class="text-blue-600 hover:underline">Emllak</a>, <a href="http://karwwan.com"
+                class="text-blue-600 hover:underline" target="_blank">Karwwan</a>, <a href="http://daraaye.com"
+                class="text-blue-600 hover:underline">Darayee</a> , <a href="http://alhawaims.com" target="_blank"
+                class="text-blue-600 hover:underline">HRIMS</a> platforms, <a href="http://alhawatechs.com"
+                class="text-blue-600 hover:underline" target="_blank">Al-Hawa
+                Technologies</a> website and <a href="http://alhawagc.com" class="text-blue-600 hover:underline"
+                target="_blank">Al-Hawa Group of Companies</a> website.
             </p>
+            <br>
+            <hr>
         </div>
         <div class="right-column">
             <img :src="profile" alt="Profile" class="w-full rounded-lg shadow-lg" />
