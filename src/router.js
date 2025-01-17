@@ -6,7 +6,7 @@ import HeadLine from './components/HeadLine.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: HeadLine
   },
@@ -19,6 +19,10 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactForm
+  },
+  {
+    path: '/Amir-Portfolio', // Redirect from the repository name
+    redirect: '/home'
   }
 ]
 
