@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 import ProjectList from './components/ProjectList.vue'
 import ContactForm from './components/ContactForm.vue'
 import HeadLine from './components/HeadLine.vue'
-
+import SkillsSection from './components/SkillsSection.vue'
 
 const routes = [
   {
@@ -13,6 +13,11 @@ const routes = [
   {
     path: '/home',
     redirect: '/'
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: SkillsSection
   },
   {
     path: '/projects',

@@ -41,6 +41,17 @@
             </li>
             <li>
               <router-link
+                :to="{ name: 'skills' }"
+                class="nav-link"
+                active-class="nav-link-active"
+                exact-active-class="nav-link-active"
+                @click="isOpen = false"
+              >
+                Skills
+              </router-link>
+            </li>
+            <li>
+              <router-link
                 :to="{ name: 'projects' }"
                 class="nav-link"
                 active-class="nav-link-active"

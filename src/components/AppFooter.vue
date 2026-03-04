@@ -3,7 +3,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm text-surface-500 font-medium">
-          &copy; {{ new Date().getFullYear() }} Amir Hussain Habibi. Full Stack Developer.
+          &copy; {{ new Date().getFullYear() }} Amir Hussain Habibi. Full Stack Developer · Project Manager · Team Leader.
         </p>
         <nav class="flex items-center gap-6">
           <router-link
@@ -11,6 +11,12 @@
             class="text-sm text-surface-500 hover:text-accent-600 transition-colors"
           >
             Home
+          </router-link>
+          <router-link
+            :to="{ name: 'skills' }"
+            class="text-sm text-surface-500 hover:text-accent-600 transition-colors"
+          >
+            Skills
           </router-link>
           <router-link
             :to="{ name: 'projects' }"
