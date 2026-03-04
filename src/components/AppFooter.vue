@@ -1,5 +1,5 @@
 <template>
-  <footer class="border-t border-surface-200 bg-white/80 mt-auto">
+  <footer class="border-t border-surface-200 bg-white/80 mt-auto transition-colors duration-200 hover:bg-white/90">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm text-surface-500 font-medium">

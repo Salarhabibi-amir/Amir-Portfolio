@@ -1,13 +1,13 @@
 <template>
   <section class="py-8 md:py-12">
-    <header class="mb-10">
+    <header class="mb-10 opacity-0 animate-fade-in-up animate-fill-both">
       <p class="font-display text-accent-600 font-semibold text-sm uppercase tracking-wider">Get in touch</p>
       <h1 class="font-display text-3xl sm:text-4xl font-bold text-surface-900 mt-1">Reach out</h1>
       <p class="mt-3 text-surface-600 max-w-xl">
         I'm open to collaboration and new opportunities. Send a message or connect via the links below.
       </p>
     </header>
-    <div class="rounded-2xl border border-surface-200 bg-white p-6 sm:p-8 shadow-card max-w-xl">
+    <div class="contact-card rounded-2xl border border-surface-200 bg-white p-6 sm:p-8 shadow-card max-w-xl opacity-0 animate-scale-in animate-fill-both animate-delay-100">
       <p class="text-surface-600 mb-6">
         A contact form or backend integration can be added here. For now, you can reach me via:
       </p>
@@ -43,3 +43,13 @@
 
 <script setup>
 </script>
+
+<style scoped>
+.contact-card {
+  transition: box-shadow 0.3s ease, border-color 0.2s ease;
+}
+.contact-card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  border-color: rgb(199 210 254);
+}
+</style>

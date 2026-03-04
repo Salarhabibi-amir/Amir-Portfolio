@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 z-50 border-b border-surface-200 bg-white/95 backdrop-blur-sm">
+  <nav class="sticky top-0 z-50 border-b border-surface-200 bg-white/95 backdrop-blur-sm transition-shadow duration-300 hover:shadow-sm">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16">
         <router-link
@@ -23,9 +23,9 @@
           </svg>
         </button>
         <div
-          :class="{ hidden: !isOpen }"
           id="navbar-menu"
-          class="md:flex md:items-center md:gap-1 w-full md:w-auto"
+          class="md:flex md:items-center md:gap-1 w-full md:w-auto overflow-hidden transition-[max-height,opacity] duration-300 ease-out md:!max-h-none md:!opacity-100"
+          :class="isOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0 pointer-events-none md:max-h-none md:opacity-100 md:pointer-events-auto'"
         >
           <ul class="flex flex-col md:flex-row md:items-center gap-1 py-4 md:py-0 md:gap-0">
             <li>

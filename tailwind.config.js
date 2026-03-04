@@ -38,6 +38,31 @@ module.exports = {
       boxShadow: {
         'card': '0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06)',
         'card-hover': '0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05)',
+        'card-lift': '0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04)',
+      },
+      keyframes: {
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'scale-in': {
+          '0%': { opacity: '0', transform: 'scale(0.96)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        'slide-down': {
+          '0%': { opacity: '0', transform: 'translateY(-8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+        'fade-in': 'fade-in 0.4s ease-out forwards',
+        'scale-in': 'scale-in 0.35s ease-out forwards',
+        'slide-down': 'slide-down 0.3s ease-out forwards',
       },
     },
   },

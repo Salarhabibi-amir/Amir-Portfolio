@@ -1,13 +1,13 @@
 <template>
   <section class="py-8 md:py-12">
-    <header class="mb-10">
+    <header class="mb-10 opacity-0 animate-fade-in-up animate-fill-both">
       <p class="font-display text-accent-600 font-semibold text-sm uppercase tracking-wider">Portfolio</p>
       <h1 class="font-display text-3xl sm:text-4xl font-bold text-surface-900 mt-1">Projects & Experience</h1>
       <p class="mt-3 text-surface-600 max-w-2xl">Web applications and sites I've built or contributed to, grouped by audience.</p>
     </header>
 
     <div class="space-y-12">
-      <div>
+      <div class="opacity-0 animate-fade-in-up animate-fill-both animate-delay-100">
         <h2 class="font-display text-xl font-semibold text-surface-800 mb-1 flex items-center gap-2">
           <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-100 text-accent-600 text-sm" aria-hidden="true">🌐</span>
           Public & social platforms
@@ -15,9 +15,10 @@
         <p class="text-sm text-surface-500 mb-5">Products for everyone — real estate, transport, and similar services.</p>
         <ul class="grid gap-6 sm:grid-cols-2">
           <li
-            v-for="project in publicProjects"
+            v-for="(project, index) in publicProjects"
             :key="project.url || project.title"
-            class="project-card"
+            class="project-card opacity-0 animate-fade-in-up animate-fill-both"
+            :style="{ animationDelay: `${200 + index * 80}ms` }"
           >
             <a
               :href="project.url || '#'"
@@ -58,7 +59,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="opacity-0 animate-fade-in-up animate-fill-both animate-delay-200">
         <h2 class="font-display text-xl font-semibold text-surface-800 mb-1 flex items-center gap-2">
           <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-100 text-accent-600 text-sm" aria-hidden="true">🏢</span>
           For NGOs & companies
@@ -66,9 +67,10 @@
         <p class="text-sm text-surface-500 mb-5">Business and organizational products — HR, inventory, procurement, ERP, and corporate sites.</p>
         <ul class="grid gap-6 sm:grid-cols-2">
           <li
-            v-for="project in companyProjects"
+            v-for="(project, index) in companyProjects"
             :key="project.url || project.title"
-            class="project-card"
+            class="project-card opacity-0 animate-fade-in-up animate-fill-both"
+            :style="{ animationDelay: `${300 + index * 60}ms` }"
           >
             <a
               :href="project.url || '#'"
@@ -185,6 +187,12 @@ const companyProjects = [
 
 <style scoped>
 .project-card {
-  @apply rounded-xl border border-surface-200 bg-white shadow-card hover:shadow-card-hover hover:border-accent-200 transition-all duration-200 overflow-hidden flex flex-col;
+  @apply rounded-xl border border-surface-200 bg-white shadow-card overflow-hidden flex flex-col;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  border-color: rgb(199 210 254);
 }
 </style>
