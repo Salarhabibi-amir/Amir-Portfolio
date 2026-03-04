@@ -1,35 +1,34 @@
 <template>
-    <div class="flex flex-col gap-8 p-6">
-        <div class="left-column">
-            <h4 class="text-2xl font-bold mb-4">Full Stack Developer</h4>
-            <p class="mb-4">
-                My name is Amir Hussain Habibi, and I hold a Bachelor's degree in Computer Science from Kabul
-                Polytechnic University, which I completed in 2022. As a Full Stack Web Developer with over three years
-                of hands-on experience, I specialize in designing and developing a variety of websites and web
-                applications. My primary stack includes Laravel and Vue.js, and I also have expertise in CodeIgniter,
-                Firebase, React, and WordPress. I am passionate about creating efficient, user-friendly solutions that
-                meet the unique needs of each project.
-            </p>
-            <p>
-                I have worked on various types of web applications, such  <a href="http://emllak.com" target="_blank"
-                class="text-blue-600 hover:underline">Emllak</a>, <a href="http://karwwan.com"
-                class="text-blue-600 hover:underline" target="_blank">Karwwan</a>, <a href="http://daraaye.com"
-                class="text-blue-600 hover:underline">Darayee</a> , <a href="http://alhawaims.com" target="_blank"
-                class="text-blue-600 hover:underline">HRIMS</a> platforms, <a href="http://alhawatechs.com"
-                class="text-blue-600 hover:underline" target="_blank">Al-Hawa
-                Technologies</a> website and <a href="http://alhawagc.com" class="text-blue-600 hover:underline"
-                target="_blank">Al-Hawa Group of Companies</a> website.
-            </p>
-            <br>
-            <hr>
+  <section class="py-8 md:py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-3 space-y-6">
+        <p class="font-display text-accent-600 font-semibold text-sm uppercase tracking-wider opacity-0 animate-fade-in-up animate-fill-both animate-delay-100">Full Stack Developer · Project Manager · Team Leader</p>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold text-surface-900 leading-tight opacity-0 animate-fade-in-up animate-fill-both animate-delay-200">
+          Hi, I'm Amir Hussain Habibi
+        </h1>
+        <div class="space-y-4 text-surface-600 leading-relaxed">
+          <p class="opacity-0 animate-fade-in-up animate-fill-both animate-delay-300">
+            I hold a Bachelor's degree in Computer Science from Kabul Polytechnic University (2022). With more than seven years of experience, I design and build websites and web applications. I've worked in Junior, Senior, Team Leader, and Manager positions and use a range of technologies to deliver efficient, user-friendly solutions tailored to each project.
+          </p>
+          <p class="opacity-0 animate-fade-in-up animate-fill-both animate-delay-400">
+            I've delivered projects such as <a href="https://erp.alhawaims.com/" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">ERP System</a>, <a href="https://emllak.com" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Emllak</a>, <a href="https://karwwan.com" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Karwwan</a>, <a href="https://daraaye.com" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Darayee</a>, <a href="https://alhawaims.com/" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">HRIMS</a>, <a href="https://alhawatechs.com" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Al-Hawa Technologies</a>, and <a href="https://alhawagc.com" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Al-Hawa Group of Companies</a>. See my <router-link to="/projects" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Projects</router-link> and <router-link to="/skills" class="text-accent-600 hover:text-accent-700 font-medium underline decoration-accent-200 hover:decoration-accent-400 underline-offset-2 transition-colors">Skills</router-link> for more.
+          </p>
         </div>
-        <div class="right-column">
-            <img :src="profile" alt="Profile" class="w-full rounded-lg shadow-lg" />
+      </div>
+      <div class="lg:col-span-2 flex justify-center lg:justify-end">
+        <div class="relative opacity-0 animate-scale-in animate-fill-both animate-delay-400 transition-transform duration-300 hover:scale-[1.02]">
+          <img
+            :src="profile"
+            alt="Amir Hussain Habibi"
+            class="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl object-cover shadow-card-hover ring-1 ring-surface-200"
+          />
+          <div class="absolute -z-10 -inset-4 rounded-3xl bg-accent-100/60 blur-xl transition-opacity duration-300 group-hover:opacity-80" aria-hidden="true" />
         </div>
+      </div>
     </div>
+  </section>
 </template>
 
 <script setup>
-import profile from "@/assets/img.jpg"
-
+import profile from '@/assets/img.jpg'
 </script>

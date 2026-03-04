@@ -1,51 +1,100 @@
 <template>
-    <nav class="border-blue-200 bg-blue-50 dark:bg-blue-800 dark:border-blue-700">
-        <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center rounded space-x-3 rtl:space-x-reverse">
-                <img :src="profile" class="w-12 h-13 rounded-full" alt="" />
-                <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Amir Hussain
-                    Habibi</span>
-            </a>
-            <button @click="toggleMenu" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-solid-bg" :aria-expanded="isOpen">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div :class="{ 'hidden': !isOpen }" class="w-full md:block md:w-auto" id="navbar-solid-bg">
-                <ul
-                    class="flex flex-col font-medium mt-4  rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                    <li>
-                        <router-link :to="{ name: 'home' }"
-                            class="block py-1 px-2 md:p-0 text-xs text-white bg-purple-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                            aria-current="page">Home</router-link>
-                    </li>
-                    <li>
-                        <router-link :to="{ name: 'projects' }"
-                            class="block py-1 px-2 md:p-0 text-gray-900 text-xs rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects
-                            and Experience</router-link>
-                    </li>
-                    <li>
-                        <router-link :to="{ name: 'contact' }"
-                            class="block py-1 px-2 md:p-0 text-gray-900 text-xs rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Reach
-                            out</router-link>
-                    </li>
-
-                </ul>
-            </div>
+  <nav class="sticky top-0 z-50 border-b border-surface-200 bg-white/95 backdrop-blur-sm transition-shadow duration-300 hover:shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <router-link
+          :to="{ name: 'home' }"
+          class="flex items-center gap-3 rounded-lg transition-opacity hover:opacity-90"
+        >
+          <img :src="profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-surface-200" alt="Amir Hussain Habibi" />
+          <span class="font-display font-semibold text-surface-800 text-base">Amir Hussain Habibi</span>
+        </router-link>
+        <button
+          type="button"
+          @click="toggleMenu"
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-surface-500 hover:bg-surface-100 hover:text-surface-700 focus:outline-none focus:ring-2 focus:ring-accent-500"
+          aria-controls="navbar-menu"
+          :aria-expanded="isOpen"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <div
+          id="navbar-menu"
+          class="md:flex md:items-center md:gap-1 w-full md:w-auto overflow-hidden transition-[max-height,opacity] duration-300 ease-out md:!max-h-none md:!opacity-100"
+          :class="isOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0 pointer-events-none md:max-h-none md:opacity-100 md:pointer-events-auto'"
+        >
+          <ul class="flex flex-col md:flex-row md:items-center gap-1 py-4 md:py-0 md:gap-0">
+            <li>
+              <router-link
+                :to="{ name: 'home' }"
+                class="nav-link"
+                active-class="nav-link-active"
+                exact-active-class="nav-link-active"
+                @click="isOpen = false"
+              >
+                Home
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'skills' }"
+                class="nav-link"
+                active-class="nav-link-active"
+                exact-active-class="nav-link-active"
+                @click="isOpen = false"
+              >
+                Skills
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'projects' }"
+                class="nav-link"
+                active-class="nav-link-active"
+                exact-active-class="nav-link-active"
+                @click="isOpen = false"
+              >
+                Projects
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                :to="{ name: 'contact' }"
+                class="nav-link"
+                active-class="nav-link-active"
+                exact-active-class="nav-link-active"
+                @click="isOpen = false"
+              >
+                Contact
+              </router-link>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </template>
+
 <script setup>
 import { ref } from 'vue'
-import profile from "@/assets/profile.jpg"
+import profile from '@/assets/profile.jpg'
+
 const isOpen = ref(false)
 
 const toggleMenu = () => {
-    isOpen.value = !isOpen.value
+  isOpen.value = !isOpen.value
 }
 </script>
+
+<style scoped>
+.nav-link {
+  @apply block px-4 py-2.5 rounded-lg text-sm font-medium text-surface-600 hover:bg-surface-100 hover:text-surface-800 transition-colors;
+}
+.nav-link-active {
+  @apply bg-accent-50 text-accent-700 hover:bg-accent-100 hover:text-accent-800;
+}
+</style>
