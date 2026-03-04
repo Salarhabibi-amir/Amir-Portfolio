@@ -18,7 +18,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# use main instead of master if your default branch is main
-git push -f git@github.com:Salarhabibi-amir/Amir-Portfolio.git main:gh-pages
+# use current branch (main or master) in dist to push to gh-pages
+git push -f git@github.com:Salarhabibi-amir/Amir-Portfolio.git "$(git branch --show-current):gh-pages"
 
 cd -
